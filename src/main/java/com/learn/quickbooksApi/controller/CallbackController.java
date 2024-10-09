@@ -13,11 +13,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.RequestParam;
 
-
-/**
- * @author dderose
- *
- */
 @Controller
 public class CallbackController {
 
@@ -46,8 +41,6 @@ public class CallbackController {
             if (csrfToken.equals(state)) {
                 session.setAttribute("realmId", realmId);
                 session.setAttribute("auth_code", authCode);
-                logger.info("realmId: " +  realmId );
-                logger.info("auth_code: " +  authCode );
 
                 OAuth2PlatformClient client  = factory.getOAuth2PlatformClient();
                 String redirectUri = factory.getPropertyValue("OAuth2AppRedirectUri");
