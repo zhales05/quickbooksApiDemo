@@ -1,0 +1,15 @@
+
+#OAuth2 App Configuration
+
+spring.application.name=quickbooksApi
+OAuth2AppClientId=<Your OAuth2 App Client Id>
+OAuth2AppClientSecret=<Your OAuth2 App Client Secret>
+OAuth2AppRedirectUri=http://localhost:8080/oauth2redirect
+
+#QBO API endpoint
+IntuitAccountingAPIHost=https://sandbox-quickbooks.api.intuit.com
+#IntuitAccountingAPIHost=https://quickbooks.api.intuit.com
+
+spring.thymeleaf.cache=false
+server.port = 8080
+
